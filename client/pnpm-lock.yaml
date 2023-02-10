@@ -10,6 +10,7 @@ specifiers:
   '@vitejs/plugin-react': ^3.1.0
   ace-builds: ^1.15.0
   framer-motion: ^4
+  prop-types: ^15.8.1
   react: ^18.2.0
   react-ace: ^10.1.0
   react-dom: ^18.2.0
@@ -22,6 +23,7 @@ dependencies:
   '@emotion/styled': 11.10.5_jrh5enlbqfbnumycmktdqgd6se
   ace-builds: 1.15.0
   framer-motion: 4.1.17_biqbaboplfbrettd7655fr4n2y
+  prop-types: 15.8.1
   react: 18.2.0
   react-ace: 10.1.0_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0

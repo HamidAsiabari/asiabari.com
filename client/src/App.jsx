@@ -4,14 +4,14 @@ import Stack from '@mui/material/Stack';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ProjectCard from './components/projects/project';
 import Container from '@mui/material/Container';
-
+import Footer from "./components/footer/footer";
 import Box from '@mui/material/Box';
 
 const lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#366b8f',
+      main: '#6e8080',
     },
   },
 });
@@ -24,6 +24,7 @@ function App() {
 
     <ResponsiveAppBar />
     <div class="bodyshadow">
+      
       <div className='slideContent'>
        <h1>Hamid Asiabari</h1>
        <p>
@@ -44,9 +45,9 @@ function App() {
     <div className="App">
    
 
-
+    <Container maxWidth="md">
     <h1>My experiences</h1>
-      <div className="card expText">
+      <div className="card ">
         <p >
       My experience started with programming in Visual Basic.</p><p>
        After that, I was programming on microcontrollers with Bascom language. </p><p>
@@ -60,7 +61,7 @@ Finally, after all these activities, I decided to focus on JavaScript with the R
       
       </div>
 
-
+</Container>
 
 
 
@@ -137,11 +138,16 @@ Finally, after all these activities, I decided to focus on JavaScript with the R
   
       </Box>
       </Container>
+      
+      <Footer />
 
 
     </div>
     </ThemeProvider>
+    
+
     </Stack>
+
     </>
   )
 }

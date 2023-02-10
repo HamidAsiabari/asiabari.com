@@ -9,7 +9,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  background-color: #122436;
+  background-color: #04172c;
   height: 44vh;
   padding-top: 10vh;
 }
@@ -30,14 +30,15 @@
   max-width: 800px;
 }
 .shadow {
-  filter: drop-shadow(10px 10px 200px #366b8f) drop-shadow(-10px -10px 50px #366b8f);
+  filter: drop-shadow(10px 10px 200px #6e8080) drop-shadow(-10px -10px 50px #6e8080);
 }
 
 .triangle-wrapper {
+  margin-top: -20vh;
   width: 30vw;
   height: calc(30vw / (1/ 1));
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: #366b8f;
+  background-color: #6e8080;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +47,7 @@
 .triangle {
   width: calc(30vw - 30px);
   height: calc(30vw - 30px);
-  background-color: #1e3e56;
+  background-color: #04172c;
   background-image: url(/src/assets/profile.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,7 +89,7 @@
 /* variables */
 :root {
   /* colors */
-  --primary-color: #366b8f;
+  --primary-color: #04172c;
   /* --primary-color-dark: color(#f44336 shade(12%));
   --primary-color-tint: color(#f44336 tint(70%));
   --secondary-color: blue;
@@ -101,7 +102,7 @@
 
 .formbody {
   color: #fff;
-  background: #122436;
+  background: #6e8080;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -220,4 +221,21 @@
       color: gray;
       color: var(--primary-color);
       text-decoration: none;
+    }
+
+
+    /* /////
+    Footer
+    */
+
+    .footer {
+      /* display: flex;
+      justify-content: right;
+      align-items: center; */
+      background-color: #6e8080;
+      color:white;
+      height: 190px;
+      margin-top: 10vh;
+      max-width: 100%;
+      
     }
