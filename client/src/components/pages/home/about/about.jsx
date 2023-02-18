@@ -25,7 +25,7 @@ export default function About() {
                 Hello . I am Hamid. I have 11 years of programming experience in different languages and have worked with many companies as a programmer, consultant and project manager. In recent years, I have worked as a freelancer with the best people I know in this field, and now with all these experiences, I am ready to serve you to get the best results for you.
                 </p>
                 <h2>
-                React js, React Native, NodeJs, Docker and swarm
+                React js | React Native | NodeJs | Docker and swarm
                 </h2>
             </Item>
           </Grid>
