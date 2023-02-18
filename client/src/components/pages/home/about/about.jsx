@@ -24,9 +24,19 @@ export default function About() {
                 <p>
                 Hello . I am Hamid. I have 11 years of programming experience in different languages and have worked with many companies as a programmer, consultant and project manager. In recent years, I have worked as a freelancer with the best people I know in this field, and now with all these experiences, I am ready to serve you to get the best results for you.
                 </p>
+                <h5>Web and Mobile Application:</h5>
                 <h2>
-                React js | React Native | NodeJs | Docker and swarm
+                React js | React Native | Material-UI
                 </h2>
+                <h5>Server side:</h5>
+                <h2>
+                Linux | Docker | swarm | CI/CD | python
+                </h2>
+                <h5>Backend and CMS:</h5>
+                <h2>
+                NodeJS | PHP | MySQL | Wordpress plugin/them
+                </h2>
+
             </Item>
           </Grid>
           <Grid item xs={6} md={3}>

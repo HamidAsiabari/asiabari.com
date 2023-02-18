@@ -19,14 +19,15 @@
   --form-width: 16rem;
 }
 .about{
-  padding-top: 14vh;
+  padding-top: 1vh;
   background-color: #6e8080;
   height: auto;
   color: #fff;
 }
 .about h2{
-  background-color: #3e485e;
+background-color: #3e485e;
 margin-left: 5vw;
+margin-top: 0vh;
 max-width: fit-content;
 padding: 10px;
 padding-left: 15px;
@@ -40,16 +41,28 @@ font-size: 1.5em;
 .about p{
   letter-spacing: 0.1em;
   font-size: 1.2em;
-  
   text-align: left;
   padding-left: 3vw;
   color: #fff;
   max-width: 800px;
+  margin-top: 0vh;
+
 }
 
 .about h1 {
   text-align: left;
   padding-left: 3vw;
+  color: #fff;
+  max-width: 800px;
+  margin-bottom: 0.5vh;
+
+
+}
+.about h5 {
+  margin-bottom: 0.5vh;
+
+  text-align: left;
+  margin-left: 5vw;
   color: #fff;
   max-width: 800px;
 
@@ -190,7 +203,7 @@ font-size: 1.5em;
       align-items: center; */
       background-color: #6e8080;
       color:white;
-      height: 190px;
+      height: 290px;
       margin-top: 10vh;
       max-width: 100%;
       
