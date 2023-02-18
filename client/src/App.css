@@ -5,13 +5,44 @@
   text-align: center;
 }
 
+/* variables */
+:root {
+  /* colors */
+  --primary-color: #04172c;
+  --primary-color-dark: color(#f44336 shade(12%));
+  --primary-color-tint: color(#f44336 tint(70%));
+  --secondary-color: blue;
+  --secodnary-color-dark: color(#222 shade(12%));
+  --secondary-color-tint: color(#222 tint(70%)); 
+  
+  /* width */
+  --form-width: 16rem;
+}
+.about{
+  padding-top: 14vh;
+  background-color: #6e8080;
+  height: auto;
+  color: #fff;
+}
+.about h2{
+  background-color: #3e485e;
+
+}
+.about p, .about h1 , .about h2{
+  text-align: left;
+  padding-left: 3vw;
+  color: #fff;
+  max-width: 800px;
+}
+/* 
 .bodyshadow {
   display: flex;
   justify-content: right;
   align-items: center;
-  background-color: #04172c;
-  height: 44vh;
+  background-color: #6e8080;
+  height: 90vh;
   padding-top: 10vh;
+
 }
 .slideContent {
   z-index: 999;
@@ -28,77 +59,20 @@
 .slideContent p {
   width: 95%;
   max-width: 800px;
+
 }
 .shadow {
   filter: drop-shadow(10px 10px 200px #6e8080) drop-shadow(-10px -10px 50px #6e8080);
-}
+} */
 
-.triangle-wrapper {
-  margin-top: -20vh;
-  width: 30vw;
-  height: calc(30vw / (1/ 1));
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: #6e8080;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.triangle {
-  width: calc(30vw - 30px);
-  height: calc(30vw - 30px);
-  background-color: #04172c;
-  background-image: url(/src/assets/profile.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 65%;
-
-
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  margin-top: 10px;
-  /* filter: blur(115px) drop-shadow(-10px -10px 75px #366b8f); */
-}
-.triangle p {
-  color: #FFF;
-}
-
-.expText 
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  max-width: 800px;
-}
-.expText p{
-  text-align: justify;
-}
-
-
-
-
-
-
-
-/* ////////////////////////form  */
-
-/*imports*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-
-/* variables */
-:root {
-  /* colors */
-  --primary-color: #04172c;
-  /* --primary-color-dark: color(#f44336 shade(12%));
-  --primary-color-tint: color(#f44336 tint(70%));
-  --secondary-color: blue;
-  --secodnary-color-dark: color(#222 shade(12%));
-  --secondary-color-tint: color(#222 tint(70%)); */
+.portrePhoto {
+  /* background-image: url(/src/assets/profile.png);
+  background-size: cover; */
+  max-width: -webkit-fill-available;
+  /* background-color: #f44336; */
   
-  /* width */
-  --form-width: 16rem;
 }
+
 
 .formbody {
   color: #fff;
