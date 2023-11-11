@@ -1,10 +1,10 @@
 import Copyright from "@/components/template/Copyright";
 import Footer from "@/components/template/Footer";
 import { HStack } from "@/components/template/HStack";
-import LandingAboutSection from "@/components/template/LandingAboutSection";
-import LandingHeroSection from "@/components/template/LandingHeroSection";
-import LandingServicesSection from "@/components/template/LandingServicesSection";
-import LandingSocialmediaSection from "@/components/template/LandingSocialmediaSection";
+import LandingAboutSection from "@/components/landing/LandingAboutSection";
+import LandingHeroSection from "@/components/landing/LandingHeroSection";
+import LandingServicesSection from "@/components/landing/LandingServicesSection";
+import LandingSocialmediaSection from "@/components/landing/LandingSocialmediaSection";
 import { VStack } from "@/components/template/VStack";
 import AuthLinks from "@modules/auth/AuthLinks";
 import { H2 } from "tamagui";
@@ -17,11 +17,7 @@ export default function Home() {
     <LandingAboutSection />
     <LandingServicesSection />
     <LandingSocialmediaSection />
-    <HStack >
-      <AuthLinks />
-      </HStack><HStack >
-      <AuthLinks />
-      </HStack>
+    
     </VStack>
     <Footer  />
               </>

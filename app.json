@@ -8,8 +8,8 @@
       "resizeMode": "contain"
     },
     "icon": "./assets/icon.png",
-    "name": "expo auth",
-    "slug": "expo_auth",
+    "name": "Asiabari",
+    "slug": "Asiabari",
     "web": {
       "favicon": "./assets/icon.png",
       "bundler": "metro"

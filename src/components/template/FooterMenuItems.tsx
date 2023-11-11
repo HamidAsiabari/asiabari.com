@@ -5,7 +5,7 @@ import { Cloud, Moon, Star, Sun } from '@tamagui/lucide-icons'
 
 const FooterMenuItems = () => {
   return (
-    <View>
+    <View style={{paddingTop:50}}>
       <H5>FooterMenuItems</H5>
       <YGroup   alignSelf="center"  width={"$18"} size="$4">
       <YGroup.Item>

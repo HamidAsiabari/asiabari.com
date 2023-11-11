@@ -8,14 +8,20 @@ import FooterMenu from '@/components/template/FooterMenu'
 import FooterAbout from '@/components/template/FooterAbout'
 import { VStack } from '@/components/template/VStack'
 import Copyright from '@/components/template/Copyright'
+import MyStack from '@/components/MyStack'
+import { useMedia } from 'tamagui'
 
 const Footer = () => {
-    return (<VStack>
-        <HStack maxHeight={"$21"}>
+  const media = useMedia()
+
+    return (<VStack px="$1"  $gtXs={{ px: '$10' }}> 
+        <MyStack  maxHeight={"$21"}>
           <FooterAbout />
           <FooterMenu />
-        </HStack>
-        <Copyright /> </VStack>
+        </MyStack>
+        
+        <Copyright /> 
+        </VStack>
       )
 }
 

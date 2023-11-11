@@ -1,15 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { H3, H4 } from 'tamagui'
+import { H3, H4, useMedia } from 'tamagui'
 import { HStack } from '@/components/template/HStack'
 import FooterMenuItems from '@/components/template/FooterMenuItems'
+import MyStack from '@/components/MyStack'
 
 const FooterMenu = () => {
+  const media = useMedia()
+
   return (
-    <HStack padding={'$6'}>
+    <MyStack isVertical={media.sm} >
       <FooterMenuItems />
       <FooterMenuItems />
-    </HStack>
+    </MyStack>
   )
 }
 
