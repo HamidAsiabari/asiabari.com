@@ -24,7 +24,7 @@ return (
     </YStack>
   
   </VStack>
-  <Footer  />
+  
   </>)
 }
 export default signup

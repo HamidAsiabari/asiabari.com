@@ -7,20 +7,18 @@ import LandingServicesSection from "@/components/landing/LandingServicesSection"
 import LandingSocialmediaSection from "@/components/landing/LandingSocialmediaSection";
 import { VStack } from "@/components/template/VStack";
 import AuthLinks from "@modules/auth/AuthLinks";
-import { H2 } from "tamagui";
+import { H2, YStack } from "tamagui";
 
 export default function Home() {
   return (<>
     <VStack >
-    
-    <LandingHeroSection />
-    <LandingAboutSection />
-    <LandingServicesSection />
-    <LandingSocialmediaSection />
-    
+      <LandingHeroSection />
+      <LandingAboutSection />
+      <LandingServicesSection />
+      <LandingSocialmediaSection />
     </VStack>
     <Footer  />
-              </>
+    </>
   );
 }
 // registerRootComponent(Home);

@@ -7,8 +7,8 @@ import MenuAvatar from '@/components/template/MenuAvatar'
 
 const TopBar = () => {
   return (
-    <HStack height={"$8"} width={"100%"} position='absolute' top={0} left={0} zIndex={9} backgroundColor={'$backgroundTransparent'}>
-      <MenuLogo />
+    <HStack height={"$8"}  width={"100%"} position='absolute' top={0} left={0} zIndex={9} backgroundColor={'$backgroundTransparent'}>
+      <MenuLogo  />
       {/* <MenuItems /> */}
       <MenuAvatar />
     </HStack>

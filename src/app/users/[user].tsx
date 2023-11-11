@@ -2,20 +2,13 @@ import { ArrowLeft } from "@tamagui/lucide-icons";
 import { useRouter, useSearchParams } from "expo-router";
 import { Avatar, Button, Group, H3, H5, H6, ListItem, Paragraph, Separator, XGroup, XStack, YGroup, YStack } from "tamagui";
 
-import { MyStack } from "@components/MyStack";
+import { VStack } from "@/components/template/VStack";
 export default function User() {
   const router = useRouter();
   const params = useSearchParams();
 
   return (
-    <MyStack justifyContent="flex-start">
-      <XStack
-        alignItems="center"
-        space="$2" >
-        <Button icon={ArrowLeft}
-          onPress={router.back} />
-        <H3>{params.user}</H3>
-      </XStack>
+    <VStack justifyContent="flex-start">
       <YStack padding="$3" space="$2" alignItems="center">
       <YGroup separator={<Separator  marginVertical='$3'/>}  alignItems="center" >
         <YGroup.Item>
@@ -30,5 +23,5 @@ export default function User() {
         </YGroup.Item>
       </YGroup>
     </YStack>
-  </MyStack>);
+  </VStack>);
 }
