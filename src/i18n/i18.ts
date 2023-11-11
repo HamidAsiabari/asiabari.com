@@ -20,7 +20,12 @@ const translations = {
   validation_code_sent_msg:"Code has been sent",
   firstname:"First name",
   lastname:"Last name",
-  submit:"Submit"
+  submit:"Submit",
+
+  dashboard:"Dashboard"
+
+
+
   },
   ja: { welcome: 'こんにちは' },
 };

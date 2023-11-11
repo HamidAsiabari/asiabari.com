@@ -12,12 +12,18 @@ const LandingAboutSection = () => {
     
     <Image
       source={{
-        uri: 'assets/laptop.png',
-        width: "100%",
+        uri: '/assets/laptop.png',
+        width: 800,
         height: 740,
       }}
+      
+      // minHeight="100%"
+      // maxHeight="100%"
+      maxWidth="100vw"
+      minWidth="100%"
+      width="100vw"
       style={{      
-        maxWidth:"100%",
+        // maxWidth:"100%",
         opacity:0.2,
         position:"absolute",
         right:0,

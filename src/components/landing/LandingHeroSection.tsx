@@ -9,11 +9,15 @@ const LandingHeroSection = () => {
 
     return (<HStack  style={styles.container} >
        <Image
-      source={{
-        uri: 'assets/personal.JPG',
-        width: 600,
-        height: "100%",
+        source={{width: 600,
+        height: 800,
+        uri: '/assets/personal.JPG',
       }}
+      minHeight="100%"
+      maxHeight="100%"
+      maxWidth="100%"
+      // minWidth="100%"
+      width="100%"
       style={{      
         maxWidth:"100%",
         // opacity:0.9,

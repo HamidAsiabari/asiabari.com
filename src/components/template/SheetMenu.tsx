@@ -1,3 +1,4 @@
+import AuthLinks from '@/modules/auth/AuthLinks'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 
 import { Sheet, SheetProps, useSheet } from '@tamagui/sheet'
@@ -127,10 +128,10 @@ export const SheetMenu = ({open, setOpen}:{open:boolean,setOpen:any}) => {
         <Sheet.Frame padding="$4" justifyContent="center" alignItems="center" space="$5">
 
           <Button size="$6" circular icon={ChevronDown} onPress={() => setOpen(false)} />
+          <AuthLinks />
+          {/* <Input width={200} /> */}
 
-          <Input width={200} />
-
-          {modal && isPercent && (
+          {/* {modal && isPercent && (
 
             <>
 
@@ -145,7 +146,7 @@ export const SheetMenu = ({open, setOpen}:{open:boolean,setOpen:any}) => {
 
             </>
 
-          )}
+          )} */}
 
         </Sheet.Frame>
 
