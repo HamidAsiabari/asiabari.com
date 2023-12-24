@@ -1,15 +1,15 @@
-import { Button, H3, XStack, YStack} from 'tamagui'
+import { Button, H3, ScrollView, XStack, YStack} from 'tamagui'
 import { router } from 'expo-router'
 import SignUpForm from '@modules/auth/SignUpForm'
 import i18n from '@i18n/i18'
 import { ArrowLeft, LogIn } from '@tamagui/lucide-icons'
 import { VStack } from '@/components/template/VStack'
 import Footer from '@/components/template/Footer'
+import { MySafeAreaView } from '@/components/MySafeAreaView'
+import TopBar from '@/components/template/TopBar'
 
 const signup = () => {
-return (
-<>
-  <VStack >
+  return (<><VStack >
       {/* <XStack 
         alignItems="center"
         space="$2" >
@@ -23,8 +23,7 @@ return (
           onPress={() => router.push("/auth/signin")}>{i18n.t('go_to_signin')}</Button>
     </YStack>
   
-  </VStack>
-  
-  </>)
+  </VStack></>)
+
 }
 export default signup

@@ -6,7 +6,7 @@ import {
   ThemeProvider
 } from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import { SplashScreen, Stack } from "expo-router";
+import { Slot, SplashScreen, Stack } from "expo-router";
 import { TamaguiProvider, Text, Theme, ScrollView, YStack,H2 } from "tamagui";
 
 import { MySafeAreaView } from "@components/MySafeAreaView";
@@ -37,20 +37,14 @@ export default function Layout() {
 
   return (<TamaguiProvider config={config}>
       <Suspense fallback={<Text>Loading...</Text>}>
-        <Theme name="dark" >
-        < >
-            <MySafeAreaView>
-    <ScrollView fullscreen>
-              <TopBar />
-              <Stack
-                screenOptions={{
-                  headerShown: false
-                }}
-              /> </ScrollView>
-             
-                          </MySafeAreaView>
-    
-          </>
+        <Theme name="dark">
+        <MySafeAreaView>
+    <ScrollView >
+    <TopBar />
+    <Slot />
+    <Footer  />
+      </ScrollView>
+      </MySafeAreaView>
           </Theme>
       </Suspense>
     </TamaguiProvider>

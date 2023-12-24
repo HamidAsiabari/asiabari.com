@@ -5,7 +5,12 @@ import { ChevronRight, GitCommit, Moon, Star } from '@tamagui/lucide-icons'
 
 const LandingServicesSection = () => {
   return (<>
-     <H3 style={{paddingRight:0,marginTop:60, fontSize:34,fontWeight:600, textAlign:"center",lineHeight:100,textShadow:"#000 2px 0 15px"}}>SERVICES</H3>
+      <Text >HHHHH</Text>
+      <Text >HHHHH</Text>
+      <Text >HHHHH</Text>
+      {/* <>
+     <H3 style={{paddingRight:0,marginTop:60, fontSize:34,fontWeight:600,
+       textAlign:"center",lineHeight:100,textShadow:"#000 2px 0 15px"}}>SERVICES</H3>
     <YGroup alignSelf="center" bordered width={"90%"} size="$20" separator={<Separator />}>
     <YGroup.Item>
       <ListItem
@@ -221,6 +226,7 @@ const LandingServicesSection = () => {
   
     </YGroup>
     
+    </> */}
     </>
   )
 }

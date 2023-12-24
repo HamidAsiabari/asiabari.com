@@ -2,21 +2,25 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Image, YStack } from 'tamagui'
 import { router } from 'expo-router';
-const MenuLogo = () => {
-  let logoImage =require ('@assets/logo.png');
+import { Asset,useAssets } from 'expo-asset';
+
+const MenuLogo =  () => {
+  // let logoImage =require ('@assets/logo.png');
+  // const [assets, error] = useAssets([require('assets/logo.png')]);
+  const [assets, error] = useAssets([require('@assets/logo.png')]);
 
   return (
     <View>
-       <Image
+      { assets != undefined ?  <Image
       source={{
-        uri: '/assets/logo.png',
+        uri: assets[0].uri,
         width: 120,
         height: 120,
       }}
       onPress={() => router.push("/")}
-      style={{cursor:'pointer',
-    }}
-    />
+    //   style={{cursor:'pointer',
+    // }}
+    /> : null }
     </View>
   )
 }

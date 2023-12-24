@@ -1,14 +1,18 @@
 import { ArrowLeft } from "@tamagui/lucide-icons";
 import { useRouter, useSearchParams } from "expo-router";
-import { Avatar, Button, Group, H3, H5, H6, ListItem, Paragraph, Separator, XGroup, XStack, YGroup, YStack } from "tamagui";
+import { Avatar, Button, Group, H3, H5, H6, ListItem, Paragraph, ScrollView, Separator, XGroup, XStack, YGroup, YStack } from "tamagui";
 
+import { MySafeAreaView } from '@/components/MySafeAreaView'
+import TopBar from '@/components/template/TopBar'
 import { VStack } from "@/components/template/VStack";
+import Footer from "@/components/template/Footer";
+
 export default function User() {
   const router = useRouter();
   const params = useSearchParams();
 
-  return (
-    <VStack justifyContent="flex-start">
+  return (<>
+  <VStack justifyContent="flex-start">
       <YStack padding="$3" space="$2" alignItems="center">
       <YGroup separator={<Separator  marginVertical='$3'/>}  alignItems="center" >
         <YGroup.Item>
@@ -23,5 +27,7 @@ export default function User() {
         </YGroup.Item>
       </YGroup>
     </YStack>
-  </VStack>);
+  </VStack>
+  </>)
+
 }

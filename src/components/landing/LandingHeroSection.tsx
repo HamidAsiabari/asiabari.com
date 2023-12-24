@@ -3,15 +3,17 @@ import { H1, H2, H3, useMedia } from 'tamagui'
 import {View,  StyleSheet, Button, Dimensions } from 'react-native';
 import { HStack } from '@/components/template/HStack';
 import { Image } from 'tamagui'
+import { Asset,useAssets } from 'expo-asset';
 
 const LandingHeroSection = () => {
   const media = useMedia()
+  const [assets, error] = useAssets([require('@assets/personal.jpg')]);
 
     return (<HStack  style={styles.container} >
-       <Image
+      { assets != undefined ?   <Image
         source={{width: 600,
         height: 800,
-        uri: '/assets/personal.JPG',
+        uri: assets[0].uri,
       }}
       minHeight="100%"
       maxHeight="100%"
@@ -25,7 +27,7 @@ const LandingHeroSection = () => {
         left:0,
         top:-90,
       }}
-    />
+      /> : null }
     <View style={{paddingTop:media.xs? 0 :100,width:"100%" , justifyContent:"center"}} >
     <H1 style={{paddingRight:media.xs? 0 :"20%", fontSize:media.xs? 60:84,fontWeight:700, textAlign:media.xs? "left":"right",lineHeight:80,textShadow:"#000 2px 0 15px"}} >Hamid</H1>
     <H1 style={{paddingRight:media.xs? 0 :"10%", fontSize:media.xs? 60:84,fontWeight:700, textAlign:media.xs? "left":"right",lineHeight:120,textShadow:"#000 2px 0 15px"}}>Asiabari</H1>
